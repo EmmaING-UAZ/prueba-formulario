@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contacto</h1>
+        <form name="contacto" method="POST" data-netlify="true" action="/gracias.html">
+            <input type="hidden" name="form-name" value="contacto">
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </p>
+            <p>
+                <button type="submit">Enviar</button>
+            </p>
+            <div id="error-message" class="error-message" style="display: none;"></div>
+            <div id="sending-message" class="sending-message" style="display: none;">Enviando...</div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
