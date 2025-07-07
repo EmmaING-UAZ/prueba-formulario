@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>Contacto</h1>
-        <form name="contacto" method="POST" data-netlify="true" action="/gracias.html">
+        <form name="contacto" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="contacto">
             <p>
                 <label for="nombre">Nombre:</label>
@@ -30,6 +30,16 @@
             <div id="sending-message" class="sending-message" style="display: none;">Enviando...</div>
         </form>
     </div>
+
+    <!-- Modal de éxito -->
+    <div id="success-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <h2>¡Mensaje Enviado!</h2>
+            <p>Tu mensaje ha sido enviado con éxito.</p>
+            <button id="close-modal-button">Cerrar</button>
+        </div>
+    </div>
+
     <script src="main.js"></script>
 </body>
 </html>
